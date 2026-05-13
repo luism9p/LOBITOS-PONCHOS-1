@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lobitos Ponchos — Inicio</title>
+  <meta name="description"
+    content="Ponchos artesanales tejidos a mano en Perú. Tradición andina, diseño contemporáneo.">
+
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header id="siteHeader" class="site-header">
+    <nav class="site-header__nav">
+
+      <!-- Logo -->
+      <div class="site-header__logo-wrap">
+        <a href="index.html">
+          <img src="https://i.postimg.cc/zB0HwtrS/logo.png" alt="Lobitos Logo" class="site-header__logo">
+        </a>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="site-header__menu">
+        <div class="site-header__menu-item">
+          <a href="collection-lobitos-ponchos.html" class="site-header__link">Colección</a>
+          <div class="site-header__dropdown">
+            <a href="collection-lobitos-ponchos.html">Ponchos</a>
+            <a href="#">Kids</a>
+            <a href="#">Accesorios</a>
+          </div>
+        </div>
+        <div class="site-header__menu-item">
+          <a href="teampage.html" class="site-header__link">Nosotros</a>
+          <div class="site-header__dropdown">
+            <a href="teampage.html">Equipo</a>
+            <a href="causa.html">Causa</a>
+          </div>
+        </div>
+        <div class="site-header__menu-item">
+          <a href="#" class="site-header__link">Historias</a>
+          <div class="site-header__dropdown">
+            <a href="#">Blog</a>
+            <a href="#">Inspiración</a>
+          </div>
+        </div>
+        <div class="site-header__menu-item">
+          <a href="#" class="site-header__link">Contacto</a>
+          <div class="site-header__dropdown">
+            <a href="#">Email</a>
+            <a href="#">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spacer -->
+      <div class="site-header__spacer"></div>
+
+    </nav>
+
+    <!-- Mobile bar -->
+    <div class="site-header__mobile-bar md:hidden">
+      <img src="https://i.postimg.cc/zB0HwtrS/logo.png" alt="Lobitos Logo" class="site-header__mobile-logo">
+      <button class="site-header__mobile-btn" onclick="toggleMenu()" aria-label="Abrir menú">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="site-header__mobile-menu">
+      <a href="collection-lobitos-ponchos.html">Colección</a>
+      <a href="teampage.html">Nosotros</a>
+      <a href="#">Historias</a>
+      <a href="#">Contacto</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO SLIDER ========== -->
+    <section class="hero">
+      <div class="hero__slot">
+        <div class="hero__slide hero__slide--active" style="background-image:url('https://i.postimg.cc/cCH5xbm9/123.jpg')">
+        </div>
+        <div class="hero__slide" style="background-image:url('https://i.postimg.cc/23Rs0QSQ/Enlight390-JPG.jpg')"></div>
+        <div class="hero__slide" style="background-image:url('https://i.postimg.cc/ydCQMgQs/3-JPG.jpg')"></div>
+      </div>
+    </section>
+
+    <!-- ========== CATEGORIES ========== -->
+    <section class="categories">
+      <div class="categories__grid">
+
+        <a href="#" class="categories__card fade-up fade-up--delay-1">
+          <div class="categories__card-img categories__card-img--1">
+            <span class="categories__card-chip"><i data-lucide="image" style="width:11px;height:11px;"></i> 01</span>
+          </div>
+          <div class="categories__card-footer">
+            <h3 class="categories__card-title" id="cat-1-title">Lobitos Ponchos</h3>
+            <span class="categories__card-arrow"><i data-lucide="arrow-up-right"
+                style="width:18px;height:18px;"></i></span>
+          </div>
+        </a>
+
+        <a href="#" class="categories__card fade-up fade-up--delay-2">
+          <div class="categories__card-img categories__card-img--2">
+            <span class="categories__card-chip"><i data-lucide="image" style="width:11px;height:11px;"></i> 02</span>
+          </div>
+          <div class="categories__card-footer">
+            <h3 class="categories__card-title" id="cat-2-title">Lobitos Ponchos Kids</h3>
+            <span class="categories__card-arrow"><i data-lucide="arrow-up-right"
+                style="width:18px;height:18px;"></i></span>
+          </div>
+        </a>
+
+        <a href="#" class="categories__card fade-up fade-up--delay-2">
+          <div class="categories__card-img categories__card-img--3">
+            <span class="categories__card-chip"><i data-lucide="image" style="width:11px;height:11px;"></i> 03</span>
+          </div>
+          <div class="categories__card-footer">
+            <h3 class="categories__card-title" id="cat-3-title">Fundas</h3>
+            <span class="categories__card-arrow"><i data-lucide="arrow-up-right"
+                style="width:18px;height:18px;"></i></span>
+          </div>
+        </a>
+
+        <a href="#" class="categories__card fade-up fade-up--delay-3">
+          <div class="categories__card-img categories__card-img--4">
+            <span class="categories__card-chip"><i data-lucide="image" style="width:11px;height:11px;"></i> 04</span>
+          </div>
+          <div class="categories__card-footer">
+            <h3 class="categories__card-title" id="cat-4-title">Accessories</h3>
+            <span class="categories__card-arrow"><i data-lucide="arrow-up-right"
+                style="width:18px;height:18px;"></i></span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ========== BANNER ========== -->
+    <section class="banner">
+      <a href="#" class="banner__wrap">
+        <div class="banner__slot"></div>
+      </a>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about">
+      <div class="about__grid">
+        <div class="fade-up">
+          <div class="about__eyebrow" id="about-eyebrow">— Desde Perú</div>
+          <h2 class="about__title" id="about-title">Tejido con propósito</h2>
+          <p class="about__text" id="about-text">En Lobitos creamos ponchos que respiran la esencia de los Andes. Cada
+            pieza es tejida por manos que heredan tradiciones ancestrales, usando lanas naturales de la montaña. No es
+            solo abrigo—es conexión con la tierra, con la cultura, con el calor genuino que solo el tejido artesanal
+            puede dar.</p>
+          <button class="about__btn" id="about-btn">
+            <span>Conoce nuestros maestros</span>
+            <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+          </button>
+        </div>
+        <div class="fade-up fade-up--delay-1">
+          <div class="about__img">
+            <span class="about__img-chip"><i data-lucide="image" style="width:11px;height:11px;"></i> Foto · 4:5</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GIF / VIDEO ========== -->
+    <section class="gif-section">
+      <div class="gif-section__wrap fade-up">
+        <div class="gif-section__slot">
+          <video autoplay muted loop playsinline class="gif-section__video">
+            <source src="https://i.imgur.com/E6rfIVC.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p class="gif-section__caption" id="gif-caption">— El viento que teje historias —</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__grid">
+
+        <!-- Brand -->
+        <div class="site-footer__brand">
+          <img src="https://i.postimg.cc/zB0HwtrS/logo.png" alt="Lobitos Logo" class="site-footer__brand-logo">
+          <p class="site-footer__brand-text">Ponchos que abrazan tradición. Tejidos que perduran.</p>
+          <div class="site-footer__social">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="#" aria-label="Email"><i data-lucide="mail"></i></a>
+          </div>
+        </div>
+
+        <!-- Colección -->
+        <div>
+          <div class="site-footer__col-title">Colección</div>
+          <ul class="site-footer__col-list">
+            <li><a href="collection-lobitos-ponchos.html">Ponchos</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Accesorios</a></li>
+          </ul>
+        </div>
+
+        <!-- Nosotros -->
+        <div>
+          <div class="site-footer__col-title">Nosotros</div>
+          <ul class="site-footer__col-list">
+            <li><a href="teampage.html">Equipo</a></li>
+            <li><a href="causa.html">Causa</a></li>
+            <li><a href="#">B2B</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom -->
+      <div class="site-footer__bottom">
+        <div>© 2025 Lobitos Ponchos. Hecho en Perú.</div>
+        <div class="site-footer__bottom-links">
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('site-header__mobile-menu--open');
+    }
+
+    lucide.createIcons();
+  </script>
+
+  <script>
+    const header = document.getElementById('siteHeader');
+    const hero = document.querySelector('.hero__slot');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+      const heroBottom = hero ? hero.offsetHeight : 0;
+
+      if (currentScroll <= heroBottom) {
+        header.style.transform = 'translateY(0)';
+        lastScroll = currentScroll;
+        return;
+      }
+
+      header.style.transform = currentScroll > lastScroll
+        ? 'translateY(-100%)'
+        : 'translateY(0)';
+
+      lastScroll = currentScroll;
+    });
+  </script>
+
+  <script>
+    const slides = document.querySelectorAll('.hero__slide');
+    let current = 0;
+
+    function nextSlide() {
+      slides[current].classList.remove('hero__slide--active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('hero__slide--active');
+    }
+
+    setInterval(nextSlide, 2000);
+  </script>
+
+</body>
+
+</html>
