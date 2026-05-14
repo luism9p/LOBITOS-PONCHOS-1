@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap');
 /* ============================================
    LOBITOS PONCHOS — Global Stylesheet
    BEM Methodology
@@ -5,6 +6,8 @@
 
 /* --- RESET & BASE --- */
 :root {
+  --font-display: 'Barrio', cursive;
+  --font-body: 'Cabin', sans-serif;
   --bg: #ffffff;
   --surface: #ffffff;
   --text: #1a1a1a;
@@ -26,7 +29,7 @@ body {
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-body);
   background: var(--bg);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
@@ -43,13 +46,15 @@ a {
 }
 
 /* --- TYPOGRAPHY --- */
+
+h1, h2, h3, h4, h5, h6, .navbar-links, .collection-header__title, .collection-card__name {
+  font-family: var(--font-display);
+}
+
 .font-display {
-  font-family: 'Fraunces', serif;
-  font-optical-sizing: auto;
 }
 
 .font-barrio {
-  font-family: 'Barrio', cursive;
 }
 
 /* ============================================
@@ -97,7 +102,6 @@ a {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Barrio', cursive;
 }
 
 .site-header__spacer {
@@ -142,7 +146,6 @@ a {
   padding: 6px 0;
   opacity: 0.8;
   transition: opacity 0.2s;
-  font-family: 'Manrope', sans-serif;
   text-transform: none;
 }
 
@@ -185,7 +188,6 @@ a {
   gap: 1rem;
   font-size: 0.875rem;
   letter-spacing: 0.05em;
-  font-family: 'Barrio', cursive;
 }
 
 .site-header__mobile-menu--open {
@@ -404,7 +406,6 @@ a {
 }
 
 .categories__card-title {
-  font-family: 'Fraunces', serif;
   font-size: 1.25rem;
   font-weight: 500;
 }
@@ -471,7 +472,6 @@ a {
 }
 
 .about__title {
-  font-family: 'Fraunces', serif;
   font-size: 2.25rem;
   font-weight: 300;
   line-height: 1.02;
@@ -585,7 +585,6 @@ a {
 }
 
 .causa-hero__title {
-  font-family: 'Barrio', cursive;
   font-size: 2.25rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -645,7 +644,6 @@ a {
 }
 
 .causa-principles__title {
-  font-family: 'Barrio', cursive;
   font-size: 1.25rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -684,7 +682,6 @@ a {
 }
 
 .collection-header__title {
-  font-family: 'Barrio', cursive;
   font-size: 2.25rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -739,7 +736,6 @@ a {
 }
 
 .collection-card__name {
-  font-family: 'Fraunces', serif;
   font-size: 1.25rem;
 }
 
@@ -855,7 +851,6 @@ a {
 }
 
 .product__title {
-  font-family: 'Barrio', cursive;
   font-size: 1.875rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -918,7 +913,6 @@ a {
 }
 
 .team-intro__title {
-  font-family: 'Barrio', cursive;
   font-size: 2.25rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -968,7 +962,6 @@ a {
 }
 
 .team-member__name {
-  font-family: 'Barrio', cursive;
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
