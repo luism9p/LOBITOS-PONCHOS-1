@@ -1196,3 +1196,159 @@ h1, h2, h3, h4, h5, h6, .navbar-links, .collection-header__title, .collection-ca
     width: 100%;
   }
 }
+
+/* ============================================
+   BLOCK: collection-layout (sidebar + grid)
+   ============================================ */
+
+/* --- Layout wrapper: stacked on mobile, 2-col on desktop --- */
+.collection-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 1.5rem 5rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+/* --- Sidebar --- */
+.collection-sidebar {
+  width: 100%;
+  background: #faf9f7;
+  border: 1px solid #ece9e3;
+  border-radius: 1rem;
+  padding: 1.75rem 1.5rem;
+}
+
+.collection-sidebar__title {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 1.25rem;
+}
+
+.collection-sidebar__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.collection-sidebar__item {
+  padding: 0.1rem 0;
+}
+
+/* Custom label row */
+.collection-sidebar__label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text);
+  padding: 0.55rem 0.5rem;
+  border-radius: 0.5rem;
+  transition: background 0.18s ease, color 0.18s ease;
+  user-select: none;
+}
+
+.collection-sidebar__label:hover {
+  background: #f0ece4;
+}
+
+/* Hide native checkbox */
+.collection-sidebar__checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Custom checkbox box */
+.collection-sidebar__check-box {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid #c5bfb5;
+  border-radius: 4px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.18s ease, background 0.18s ease;
+  position: relative;
+}
+
+/* Tick mark via pseudo-element */
+.collection-sidebar__check-box::after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 9px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg) translateY(-1px);
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.collection-sidebar__checkbox:checked + .collection-sidebar__check-box {
+  background: var(--text);
+  border-color: var(--text);
+}
+
+.collection-sidebar__checkbox:checked + .collection-sidebar__check-box::after {
+  opacity: 1;
+}
+
+/* Limpiar filtros button */
+.collection-sidebar__clear {
+  display: none; /* shown via JS when filters are active */
+  margin-top: 1.25rem;
+  width: 100%;
+  background: none;
+  border: 1px solid #c5bfb5;
+  border-radius: 9999px;
+  padding: 0.55rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.collection-sidebar__clear:hover {
+  border-color: var(--text);
+  color: var(--text);
+}
+
+/* --- Remove default padding from .collection-grid when inside the layout --- */
+.collection-layout .collection-grid {
+  padding: 0;
+  flex: 1;
+  min-width: 0;
+}
+
+/* ---- Responsive: 2-column layout on md+ ---- */
+@media (min-width: 768px) {
+  .collection-layout {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 2.5rem 5rem;
+  }
+
+  .collection-sidebar {
+    width: 240px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 88px; /* below sticky header */
+  }
+}
